@@ -1,4 +1,6 @@
-# How to Use
+# Syntactic Calculator
+
+This is a calculator that reads mathematical terms containing floating point numbers, +, -, * and / as well as parenthesis.
 
 The calculator CLI supports various use cases through flags for file input, manual input, evaluation method selection, and profiling. Below are examples on how to use these flags for different scenarios:
 
