@@ -86,8 +86,8 @@ Num represents a numeric constant in an expression. It's a simple wrapper around
 
 ```
 type unary struct {
-op rune // '+' or '-'
-x Expr
+    op rune // '+' or '-'
+    x Expr
 }
 ```
 
@@ -96,8 +96,8 @@ Unary encapsulates unary operations, which are operations with a single operand.
 ### Binary
 ```
 type binary struct {
-op rune // '+', '-', '*', '/'
-x, y Expr
+    op rune // '+', '-', '*', '/'
+    x, y Expr
 }
 ```
 
