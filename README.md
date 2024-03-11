@@ -62,15 +62,15 @@ Expressions, numbers, signs, and operations can be represented using interfaces 
 The Expression interface is a fundamental part of the design, encapsulating the concept of an arithmetic expression within the calculator. It defines the essential operations that any type of expression must support to be evaluated and represented as a string.
 ```
 type Expr interface {
-// Eval computes the value of the expression.
-Eval() (float64, error)
-...
+    // Eval computes the value of the expression.
+    Eval() (float64, error)
+    ...
 }
 ```
 
-This interface mandates that any arithmetic expression, whether a simple number, a unary operation (like negation), or a binary operation (such as addition, subtraction, multiplication, or division), must implement three methods:
+This interface mandates that any arithmetic expression, whether a simple number, a unary operation (like negation), or a binary operation (such as addition, subtraction, multiplication, or division), must implement the Eval() method, this means, must be able to be evaluated to a number:
 
-- `Eval()` computes the numerical result of the expression. For operations, this involves recursively evaluating operands and applying the operation.
+`Eval()` computes the numerical result of the expression. For operations, this involves recursively evaluating operands and applying then the corresponding operation.
 
 ### Numeric and Operation Types
 
